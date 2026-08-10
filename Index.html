@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Abhishek Singh - Jeevan Rakshak Hospital</title>
+    <title>Pragati Classes - Saharsa | Best Coaching for JEE, NEET & Foundation</title>
     <!-- Google Fonts & FontAwesome for Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
+        /* ----------------------------------------------------
+           CSS STYLING - COMPREHENSIVE & RESPONSIVE DESIGN
+           ---------------------------------------------------- */
         * {
             margin: 0;
             padding: 0;
@@ -16,18 +19,19 @@
             font-family: 'Plus Jakarta Sans', sans-serif;
         }
         body {
-            background-color: #f4f7f6;
-            color: #333;
-            padding-bottom: 90px;
+            background-color: #f1f5f9;
+            color: #0f172a;
+            padding-bottom: 100px;
         }
+
         /* Header Navbar */
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 15px 20px;
-            background: #fff;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            background: #ffffff;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
             position: sticky;
             top: 0;
             z-index: 100;
@@ -35,45 +39,51 @@
         .logo-area {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
         }
         .logo-area i {
-            font-size: 24px;
-            color: #0d5c3f;
+            font-size: 26px;
+            color: #1d4ed8;
+            background: #dbeafe;
+            padding: 8px;
+            border-radius: 10px;
         }
         .logo-text h1 {
             font-size: 16px;
-            color: #113f30;
-            font-weight: 700;
+            color: #0f172a;
+            font-weight: 800;
         }
         .logo-text p {
             font-size: 10px;
-            color: #555;
-            letter-spacing: 0.5px;
+            color: #64748b;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
         }
         .menu-btn {
-            background: none;
-            border: 1px solid #ddd;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
             padding: 8px 12px;
             border-radius: 8px;
             cursor: pointer;
             font-size: 16px;
+            color: #334155;
         }
 
-        /* Main Swipeable Panels Slider Container (5 Slides support) */
+        /* Main Swipeable Panels Slider Container (5 Slides Support) */
         .main-slider-wrapper {
             max-width: 480px;
             margin: 20px auto;
             position: relative;
             overflow: hidden;
             border-radius: 24px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.08);
             background: #ffffff;
+            border: 1px solid #e2e8f0;
         }
         
         .panels-track {
             display: flex;
-            transition: transform 0.4s ease-in-out;
+            transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
             width: 100%;
         }
 
@@ -85,18 +95,18 @@
 
         /* Slide Banner Title Styling (Rectangle Border Box) */
         .slide-title-box {
-            background: #f0fdf4;
-            border: 2px solid #0d4a34;
-            color: #0d4a34;
+            background: #eff6ff;
+            border: 2px solid #1d4ed8;
+            color: #1d4ed8;
             text-align: center;
-            padding: 10px;
+            padding: 12px;
             margin: 15px 20px 0 20px;
             border-radius: 12px;
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 800;
             letter-spacing: 1px;
             text-transform: uppercase;
-            box-shadow: 0 3px 6px rgba(0,0,0,0.04);
+            box-shadow: 0 4px 8px rgba(29, 78, 216, 0.08);
         }
 
         /* Image Slider Section (Slide 1) */
@@ -105,7 +115,7 @@
             width: 100%;
             height: 420px;
             overflow: hidden;
-            background: #eaeaea;
+            background: #e2e8f0;
         }
         .slide {
             position: absolute;
@@ -121,16 +131,17 @@
             position: absolute;
             bottom: 20px;
             left: 20px;
-            background: #fff;
+            background: #ffffff;
             padding: 8px 14px;
             border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
             display: flex;
             align-items: center;
             gap: 6px;
-            font-weight: 600;
+            font-weight: 700;
             font-size: 14px;
             z-index: 10;
+            color: #0f172a;
         }
         .rating-badge i {
             color: #f59e0b;
@@ -148,66 +159,74 @@
             width: 8px;
             height: 8px;
             border-radius: 50%;
-            background: rgba(255,255,255,0.6);
+            background: rgba(255,255,255,0.7);
             cursor: pointer;
         }
         .dot.active {
-            background: #fff;
-            width: 20px;
+            background: #ffffff;
+            width: 22px;
             border-radius: 4px;
         }
 
         /* Content Styles */
         .content-padding {
-            padding: 20px 24px 24px 24px;
+            padding: 24px;
         }
         .status-pill {
             display: inline-flex;
             align-items: center;
             gap: 6px;
-            background: #e6f4ea;
-            color: #137333;
+            background: #dbeafe;
+            color: #1e40af;
             padding: 6px 14px;
             border-radius: 50px;
             font-size: 13px;
-            font-weight: 600;
+            font-weight: 700;
             margin-bottom: 15px;
         }
         .status-dot {
             width: 8px;
             height: 8px;
-            background: #34a853;
+            background: #2563eb;
             border-radius: 50%;
+            animation: pulse 1.5s infinite;
         }
+        @keyframes pulse {
+            0% { transform: scale(0.95); opacity: 0.8; }
+            50% { transform: scale(1.2); opacity: 1; }
+            100% { transform: scale(0.95); opacity: 0.8; }
+        }
+
         .location-text {
             font-size: 13px;
-            color: #b45309;
-            font-weight: 700;
+            color: #d97706;
+            font-weight: 800;
             letter-spacing: 0.5px;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
             text-transform: uppercase;
         }
         .main-heading {
-            font-size: 28px;
-            line-height: 1.25;
-            color: #0f291e;
+            font-size: 26px;
+            line-height: 1.3;
+            color: #0f172a;
             font-weight: 800;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
         }
         .main-heading span {
-            background-color: #e2f0d9;
-            padding: 0 4px;
-            border-radius: 4px;
+            background-color: #dbeafe;
+            color: #1d4ed8;
+            padding: 0 6px;
+            border-radius: 6px;
         }
-        .doctor-sub {
+        .coaching-sub {
             font-size: 14px;
-            color: #444;
-            font-weight: 600;
+            color: #475569;
+            font-weight: 700;
             margin-bottom: 15px;
         }
         .description {
             font-size: 14px;
-            color: #666;
+            color: #4b5563;
             line-height: 1.6;
             margin-bottom: 20px;
         }
@@ -215,7 +234,7 @@
         /* Top Highlight Boxes */
         .top-highlights {
             display: flex;
-            background: #0d4a34;
+            background: #1e293b;
             color: #fff;
             padding: 20px;
             text-align: center;
@@ -227,54 +246,61 @@
         .hl-box h3 {
             font-size: 18px;
             margin-bottom: 4px;
+            color: #60a5fa;
+            font-weight: 800;
         }
         .hl-box p {
             font-size: 12px;
-            opacity: 0.85;
+            opacity: 0.9;
         }
         .hl-box:first-child {
-            border-right: 1px solid rgba(255,255,255,0.2);
+            border-right: 1px solid rgba(255,255,255,0.15);
         }
 
-        /* Treatment & Info Cards */
+        /* Course Cards */
         .treat-card {
-            background: #faf8f5;
-            border: 1px solid #eee;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
             border-radius: 16px;
-            padding: 16px;
-            margin-bottom: 15px;
+            padding: 18px;
+            margin-bottom: 16px;
+            transition: transform 0.2s;
+        }
+        .treat-card:hover {
+            border-color: #93c5fd;
         }
         .treat-icon {
-            width: 36px;
-            height: 36px;
-            background: #e6f4ea;
-            color: #0d4a34;
+            width: 40px;
+            height: 40px;
+            background: #dbeafe;
+            color: #1d4ed8;
             display: flex;
             align-items: center;
             justify-content: center;
-            border-radius: 10px;
-            margin-bottom: 10px;
-            font-size: 16px;
+            border-radius: 12px;
+            margin-bottom: 12px;
+            font-size: 18px;
         }
         .treat-card h4 {
             font-size: 16px;
-            color: #0f291e;
+            color: #0f172a;
             margin-bottom: 6px;
+            font-weight: 700;
         }
         .treat-card p {
             font-size: 13px;
-            color: #666;
-            margin-bottom: 10px;
+            color: #64748b;
+            margin-bottom: 12px;
             line-height: 1.5;
         }
         .learn-more {
             font-size: 13px;
-            color: #0d4a34;
+            color: #1d4ed8;
             font-weight: 700;
             text-decoration: none;
             display: inline-flex;
             align-items: center;
-            gap: 4px;
+            gap: 6px;
         }
 
         /* Slide 4 Specific Action Buttons */
@@ -292,16 +318,17 @@
             text-align: center;
             text-decoration: none;
             cursor: pointer;
-            border: 1px solid #ddd;
+            border: 1px solid #cbd5e1;
         }
         .dir-btn-primary {
-            background-color: #0d4a34;
+            background-color: #1d4ed8;
             color: #fff;
             border: none;
         }
         .dir-btn-secondary {
-            background-color: #faf8f5;
-            color: #0d4a34;
+            background-color: #f8fafc;
+            color: #1d4ed8;
+            border-color: #93c5fd;
         }
 
         /* Panel Navigation Indicator Dots (5 Dots) */
@@ -309,7 +336,7 @@
             display: flex;
             justify-content: center;
             gap: 8px;
-            margin: 15px 0;
+            margin: 20px 0;
         }
         .p-dot {
             width: 10px;
@@ -320,8 +347,8 @@
             transition: 0.3s;
         }
         .p-dot.active {
-            background: #0d5c3f;
-            width: 24px;
+            background: #1d4ed8;
+            width: 26px;
             border-radius: 6px;
         }
 
@@ -331,11 +358,11 @@
             bottom: 0;
             left: 0;
             width: 100%;
-            background: #fff;
-            padding: 12px 20px;
+            background: #ffffff;
+            padding: 14px 20px;
             display: flex;
             gap: 12px;
-            box-shadow: 0 -4px 10px rgba(0,0,0,0.05);
+            box-shadow: 0 -4px 15px rgba(0,0,0,0.08);
             z-index: 99;
             justify-content: center;
         }
@@ -353,30 +380,26 @@
             justify-content: center;
             gap: 8px;
             text-decoration: none;
-            transition: opacity 0.2s;
         }
         .btn-whatsapp {
-            background-color: #25d366;
+            background-color: #16a34a;
             color: #fff;
         }
         .btn-call {
-            background-color: #dfb055;
+            background-color: #2563eb;
             color: #fff;
-        }
-        .btn:active {
-            opacity: 0.85;
         }
     </style>
 </head>
 <body>
 
-    <!-- Header -->
+    <!-- Header Navigation -->
     <header>
         <div class="logo-area">
-            <i class="fa-solid fa-heart-pulse"></i>
+            <i class="fa-solid fa-graduation-cap"></i>
             <div class="logo-text">
-                <h1>Dr. Abhishek Singh</h1>
-                <p>JEEVAN RAKSHAK HOSPITAL</p>
+                <h1>Pragati Classes</h1>
+                <p>Saharsa, Bihar</p>
             </div>
         </div>
         <button class="menu-btn"><i class="fa-solid fa-bars"></i></button>
@@ -386,14 +409,14 @@
     <div class="main-slider-wrapper">
         <div class="panels-track" id="panelsTrack">
             
-            <!-- SLIDE 1: Pehla Panel (Photo & Intro) -->
+            <!-- SLIDE 1: Home & Introduction -->
             <div class="container">
                 <div class="slider-container" id="slider1">
-                    <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=80" class="slide active" alt="Dr Abhishek Singh">
-                    <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=600&q=80" class="slide" alt="Hospital View">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=600&q=80" class="slide active" alt="Pragati Classes Saharsa">
+                    <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=600&q=80" class="slide" alt="Students Studying">
                     
                     <div class="rating-badge">
-                        <i class="fa-solid fa-star"></i> 4.8 <span>· 19+ reviews</span>
+                        <i class="fa-solid fa-star"></i> 4.9 <span>· Top Rated Institute</span>
                     </div>
 
                     <div class="slider-dots">
@@ -404,116 +427,116 @@
 
                 <div class="content-padding">
                     <div class="status-pill">
-                        <div class="status-dot"></div> Open now · 24 hours
+                        <div class="status-dot"></div> Admissions Open · 2026-27
                     </div>
 
                     <div class="location-text">
-                        Naya Bazar, Saharsa · Bihar
+                        Refugee Colony, Batraha, Saharsa
                     </div>
 
                     <h2 class="main-heading">
-                        The <span>best doctor in Saharsa</span> for your heart, diabetes & everyday health.
+                        The <span>best coaching institute in Saharsa</span> for JEE, NEET & Foundation.
                     </h2>
 
-                    <p class="doctor-sub">
-                        Dr. Abhishek Singh — MD, MBBS · Consultant Physician, Heart & Diabetes Specialist
+                    <p class="coaching-sub">
+                        Pragati Classes — Kota-style methodology, expert faculties & result-oriented training.
                     </p>
 
                     <p class="description">
-                        AIIMS-trained care, right here in Saharsa. Walk in any time — our clinic is open 24 hours for consultations and emergencies.
+                        Build your strong career foundation with us. Comprehensive preparation for Engineering, Medical and School/Board exams right here in Saharsa.
                     </p>
                 </div>
             </div>
 
-            <!-- SLIDE 2: Dusra Panel (PORTFOLIO BOX & What We Treat) -->
+            <!-- SLIDE 2: Portfolio & What We Teach (Courses) -->
             <div class="container">
                 <div class="slide-title-box">
-                    <i class="fa-solid fa-id-badge"></i> Portfolio
+                    <i class="fa-solid fa-book-open"></i> Portfolio & Courses
                 </div>
 
                 <div class="top-highlights">
                     <div class="hl-box">
-                        <h3>24 hrs</h3>
-                        <p>Open every day</p>
+                        <h3>JEE & NEET</h3>
+                        <p>Specialized Batches</p>
                     </div>
                     <div class="hl-box">
-                        <h3>Heart + Diabetes</h3>
-                        <p>Specialist care</p>
+                        <h3>9th to 12th</h3>
+                        <p>Foundation Focus</p>
                     </div>
                 </div>
 
                 <div class="content-padding">
-                    <div class="location-text">What We Treat</div>
-                    <h3 style="font-size: 22px; color: #0f291e; margin-bottom: 12px; font-weight: 800;">Complete care under one roof in Saharsa</h3>
-                    <p class="description" style="margin-bottom: 20px;">From everyday illness to heart and diabetes management and round-the-clock emergencies — you can see an experienced physician without travelling out of Saharsa.</p>
+                    <div class="location-text">Academic Programs</div>
+                    <h3 style="font-size: 20px; color: #0f172a; margin-bottom: 12px; font-weight: 800;">Excellence in Engineering & Medical Prep</h3>
+                    <p class="description" style="margin-bottom: 20px;">Structured curriculum designed to clear competitive exams with high precision and conceptual clarity.</p>
 
                     <div class="treat-card">
-                        <div class="treat-icon"><i class="fa-solid fa-heart-pulse"></i></div>
-                        <h4>Heart Care</h4>
-                        <p>Blood pressure, chest pain, ECG review, cholesterol and cardiac risk — assessment and ongoing management.</p>
-                        <a href="#" class="learn-more">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+                        <div class="treat-icon"><i class="fa-solid fa-atom"></i></div>
+                        <h4>Engineering (JEE Main & Advanced)</h4>
+                        <p>In-depth Physics, Chemistry and Mathematics problem-solving modules, regular test series and shortcut techniques.</p>
+                        <a href="#" class="learn-more">Explore syllabus <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
 
                     <div class="treat-card">
-                        <div class="treat-icon"><i class="fa-solid fa-droplet"></i></div>
-                        <h4>Diabetes Management</h4>
-                        <p>Sugar control, insulin guidance, diet planning and prevention of long-term complications.</p>
-                        <a href="#" class="learn-more">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+                        <div class="treat-icon"><i class="fa-solid fa-dna"></i></div>
+                        <h4>Medical (NEET-UG)</h4>
+                        <p>Rigorous coaching for Biology, Physics & Chemistry adhering strictly to the latest NCERT patterns and exam trends.</p>
+                        <a href="#" class="learn-more">Explore syllabus <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
 
-            <!-- SLIDE 3: Teesra Panel (ACHIEVEMENTS BOX & More Services) -->
+            <!-- SLIDE 3: Achievements & More Services -->
             <div class="container">
                 <div class="slide-title-box">
-                    <i class="fa-solid fa-award"></i> Achievements
+                    <i class="fa-solid fa-award"></i> Achievements & Facilities
                 </div>
 
                 <div class="content-padding" style="padding-top: 20px;">
-                    <div class="location-text">More Services & Care</div>
-                    <h3 style="font-size: 22px; color: #0f291e; margin-bottom: 15px; font-weight: 800;">Advanced Medical Services</h3>
+                    <div class="location-text">Why Choose Us</div>
+                    <h3 style="font-size: 20px; color: #0f172a; margin-bottom: 15px; font-weight: 800;">Advanced Learning Support</h3>
 
                     <div class="treat-card">
-                        <div class="treat-icon"><i class="fa-solid fa-leaf"></i></div>
-                        <h4>Ayurvedic Doctor</h4>
-                        <p>Holistic natural healing, herbal treatments, lifestyle alignment and chronic wellness support.</p>
+                        <div class="treat-icon"><i class="fa-solid fa-user-graduate"></i></div>
+                        <h4>Foundation Course (Class 9th & 10th)</h4>
+                        <p>Building core concepts early for Olympiads, NTSE, and long-term competitive exam success.</p>
                         <a href="#" class="learn-more">Learn more <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
 
                     <div class="treat-card">
-                        <div class="treat-icon"><i class="fa-solid fa-clock"></i></div>
-                        <h4>24-Hour Emergency</h4>
-                        <p>Urgent care day or night. Walk in or call ahead — the clinic never closes.</p>
+                        <div class="treat-icon"><i class="fa-solid fa-clipboard-question"></i></div>
+                        <h4>Doubt Clearing & Test Series</h4>
+                        <p>Personalized doubt sessions, regular performance analysis, and mock tests replicating real exam environments.</p>
                         <a href="#" class="learn-more">Learn more <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
 
-                    <div style="background: #e2f0d9; padding: 15px; border-radius: 12px; margin-top: 20px; text-align: center;">
-                        <p style="font-size: 13px; color: #0d4a34; font-weight: 700;">
-                            <i class="fa-solid fa-circle-check"></i> AIIMS New Delhi Trained & Trusted by 19+ Patients
+                    <div style="background: #dbeafe; padding: 15px; border-radius: 12px; margin-top: 20px; text-align: center;">
+                        <p style="font-size: 13px; color: #1e40af; font-weight: 700;">
+                            <i class="fa-solid fa-circle-check"></i> Kota Pattern Teaching Methodology in Saharsa
                         </p>
                     </div>
                 </div>
             </div>
 
-            <!-- SLIDE 4: Chautha Panel (DIRECTIONS BOX & Hospital Location Details) -->
+            <!-- SLIDE 4: Directions & Location -->
             <div class="container">
                 <div class="slide-title-box">
-                    <i class="fa-solid fa-location-dot"></i> Directions
+                    <i class="fa-solid fa-location-dot"></i> Directions & Map
                 </div>
 
                 <div class="content-padding" style="padding-top: 20px;">
-                    <div class="location-text">Find Us</div>
-                    <h3 style="font-size: 20px; color: #0f291e; margin-bottom: 8px; font-weight: 800;">Jeevan Rakshak Hospital, Naya Bazar</h3>
+                    <div class="location-text">Institute Location</div>
+                    <h3 style="font-size: 20px; color: #0f172a; margin-bottom: 8px; font-weight: 800;">Pragati Classes, Saharsa</h3>
                     <p class="description" style="font-size: 13px; margin-bottom: 15px;">
-                        Ward No 5, Sarahi Bangha Road, Refugee Colony, Naya Bazar, Saharsa, Kahra, Bihar 852202
+                        Kahra Block Road, Refugee Colony, Batraha, Saharsa, Bihar 852201
                     </p>
 
                     <div class="treat-card" style="padding: 12px 16px; margin-bottom: 10px;">
                         <div style="display: flex; gap: 12px; align-items: center;">
                             <div class="treat-icon" style="margin-bottom:0;"><i class="fa-solid fa-clock"></i></div>
                             <div>
-                                <h4 style="margin-bottom: 2px; font-size: 15px;">Open 24 hours</h4>
-                                <p style="margin-bottom: 0; font-size: 12px;">Every day, including weekends & holidays</p>
+                                <h4 style="margin-bottom: 2px; font-size: 15px;">Timing: 8:00 AM - 8:00 PM</h4>
+                                <p style="margin-bottom: 0; font-size: 12px;">Open all days for admission and counseling</p>
                             </div>
                         </div>
                     </div>
@@ -522,60 +545,56 @@
                         <div style="display: flex; gap: 12px; align-items: center;">
                             <div class="treat-icon" style="margin-bottom:0;"><i class="fa-solid fa-phone"></i></div>
                             <div>
-                                <h4 style="margin-bottom: 2px; font-size: 15px;">+91 98704 94474</h4>
-                                <p style="margin-bottom: 0; font-size: 12px;">Call or WhatsApp for consultations & emergencies</p>
+                                <h4 style="margin-bottom: 2px; font-size: 15px;">07840035758</h4>
+                                <p style="margin-bottom: 0; font-size: 12px;">Call or WhatsApp for fee structure & enquiries</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="dir-btn-group">
-                        <a href="https://maps.google.com/?q=Jeevan+Rakshak+Hospital+Saharsa" target="_blank" class="dir-btn dir-btn-primary">Get directions</a>
-                        <a href="https://wa.me/919870494474" class="dir-btn dir-btn-secondary">Contact & enquiry form</a>
+                        <a href="https://maps.google.com/?q=Pragati+Classes+Saharsa" target="_blank" class="dir-btn dir-btn-primary">Get directions</a>
+                        <a href="https://wa.me/917840035758" class="dir-btn dir-btn-secondary">Enquiry form</a>
                     </div>
 
-                    <div style="border-radius: 12px; overflow: hidden; margin-bottom: 15px; border: 1px solid #ddd;">
-                        <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=600&q=80" alt="Hospital Building" style="width: 100%; height: 160px; object-fit: cover; display: block;">
-                    </div>
-
-                    <div style="border-radius: 12px; overflow: hidden; border: 1px solid #ddd; position: relative; background: #e5e3df; height: 140px; display: flex; align-items: center; justify-content: center;">
-                        <div style="text-align: center; color: #555;">
-                            <i class="fa-solid fa-map-location-dot" style="font-size: 28px; color: #b45309; margin-bottom: 5px;"></i>
-                            <p style="font-size: 12px; font-weight: 600;">Jeevan Rakshak Hospital Saharsa</p>
-                            <a href="https://maps.google.com/?q=Jeevan+Rakshak+Hospital+Saharsa" target="_blank" style="font-size: 11px; color: #1a73e8; text-decoration: underline;">Open in Maps <i class="fa-solid fa-up-right-from-square"></i></a>
+                    <div style="border-radius: 12px; overflow: hidden; border: 1px solid #cbd5e1; position: relative; background: #e2e8f0; height: 140px; display: flex; align-items: center; justify-content: center;">
+                        <div style="text-align: center; color: #475569;">
+                            <i class="fa-solid fa-map-location-dot" style="font-size: 28px; color: #d97706; margin-bottom: 5px;"></i>
+                            <p style="font-size: 12px; font-weight: 700;">Pragati Classes Batraha Saharsa</p>
+                            <a href="https://maps.google.com/?q=Pragati+Classes+Saharsa" target="_blank" style="font-size: 11px; color: #2563eb; text-decoration: underline;">Open in Google Maps <i class="fa-solid fa-up-right-from-square"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- SLIDE 5: Panchwa Panel (DOCTOR TYPE BOX & Specialist Designations) -->
+            <!-- SLIDE 5: Faculty & Batches -->
             <div class="container">
                 <div class="slide-title-box">
-                    <i class="fa-solid fa-user-doctor"></i> Doctor Type
+                    <i class="fa-solid fa-chalkboard-user"></i> Faculty & Batches
                 </div>
 
                 <div class="content-padding" style="padding-top: 20px;">
-                    <div class="location-text">Specialist Classification</div>
-                    <h3 style="font-size: 22px; color: #0f291e; margin-bottom: 15px; font-weight: 800;">Expert Medical Professionals</h3>
+                    <div class="location-text">Expert Categories</div>
+                    <h3 style="font-size: 20px; color: #0f172a; margin-bottom: 15px; font-weight: 800;">Specialized Coaching Streams</h3>
 
                     <div class="treat-card">
-                        <div class="treat-icon"><i class="fa-solid fa-leaf"></i></div>
-                        <h4>Ayurvedic Doctor</h4>
-                        <p>Specialized in traditional natural therapies, herbal medicine and holistic wellness restoration.</p>
-                        <a href="#" class="learn-more">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+                        <div class="treat-icon"><i class="fa-solid fa-calculator"></i></div>
+                        <h4>JEE Main & Advanced Faculty Team</h4>
+                        <p>Senior IITian and expert mathematics, physics & chemistry faculties providing top-tier analytical training.</p>
+                        <a href="#" class="learn-more">Meet faculty <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
 
                     <div class="treat-card">
                         <div class="treat-icon"><i class="fa-solid fa-stethoscope"></i></div>
-                        <h4>Consultant Physician & Cardiologist</h4>
-                        <p>Expert evaluation for cardiovascular health, hypertension, diabetes mellitus and internal medicine.</p>
-                        <a href="#" class="learn-more">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+                        <h4>NEET Medical Expert Panel</h4>
+                        <p>Specialist educators focusing on high-weightage topics, diagram-based learning, and exhaustive problem sheets.</p>
+                        <a href="#" class="learn-more">Meet faculty <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
 
                     <div class="treat-card">
-                        <div class="treat-icon"><i class="fa-solid fa-hospital-user"></i></div>
-                        <h4>Emergency Medical Officer</h4>
-                        <p>Trained to handle critical care admissions, trauma support, and acute medical stabilization round-the-clock.</p>
-                        <a href="#" class="learn-more">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+                        <div class="treat-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <h4>School & Board Achievers Stream</h4>
+                        <p>Dedicated modules for BSEB and CBSE board examinations to ensure top aggregate scores alongside entrances.</p>
+                        <a href="#" class="learn-more">Meet faculty <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -594,17 +613,16 @@
 
     <!-- Sticky Bottom WhatsApp and Call Buttons -->
     <div class="action-bar">
-        <a href="https://wa.me/919870494474" class="btn btn-whatsapp">
+        <a href="https://wa.me/917840035758" class="btn btn-whatsapp">
             <i class="fa-brands fa-whatsapp"></i> WhatsApp
         </a>
-        <a href="tel:+919870494474" class="btn btn-call">
-            <i class="fa-solid fa-phone"></i> Call now
+        <a href="tel:07840035758" class="btn btn-call">
+            <i class="fa-solid fa-phone"></i> Call Now
         </a>
     </div>
 
     <!-- JavaScript for Panel Sliding & Image Carousel -->
     <script>
-        // Panel Slider Logic (5 Slides Support)
         let currentPanel = 0;
         const track = document.getElementById('panelsTrack');
         const pDots = document.querySelectorAll('.p-dot');
@@ -617,7 +635,7 @@
             });
         }
 
-        // Touch Swipe Gesture for Mobile
+        // Touch Swipe Gesture Support for Mobile
         let touchStartX = 0;
         let touchEndX = 0;
 
